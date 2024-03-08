@@ -21,6 +21,11 @@ Se implementarán medidas de seguridad para proteger el microservicio contra pos
 
 Se proporcionará documentación detallada de las clases y funciones en el código fuente para facilitar su comprensión y mantenimiento.
 
+## Para Correr el servidor, descargamos el repositorio, creamos el entorno virtual, instalamos la dependencia para conectarnos a mysql con el siguiente comando: pip install mysql-connector-python
+
+## Por ultimo ingresamos a la carpeta api y ejecutamos el archivo llamado server.py
+
+
 # Microservicio de de “Me gusta”
 
 Este documento describe el diseño de la base de datos para la implementación de la funcionalidad de "Me gusta". La funcionalidad de "Me gusta" permite a los usuarios expresar su interés en los inmuebles y nos permitirá rastrear esas interacciones en la base de datos.
