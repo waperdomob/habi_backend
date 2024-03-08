@@ -20,3 +20,26 @@ Se implementarán medidas de seguridad para proteger el microservicio contra pos
 ## Documentación
 
 Se proporcionará documentación detallada de las clases y funciones en el código fuente para facilitar su comprensión y mantenimiento.
+
+# Microservicio de de “Me gusta”
+
+Este documento describe el diseño de la base de datos para la implementación de la funcionalidad de "Me gusta". La funcionalidad de "Me gusta" permite a los usuarios expresar su interés en los inmuebles y nos permitirá rastrear esas interacciones en la base de datos.
+
+## Entidades y Relaciones
+
+- **Users:** Representa a los usuarios de la aplicación que pueden interactuar con los inmuebles.
+- **Property:** Representa los inmuebles que pueden recibir "Me gusta" por parte de los usuarios.
+- **Likes:** Una tabla de unión que registra las interacciones de "Me gusta" entre usuarios e inmuebles.
+
+Usaremos una tabla de unión Likes para registrar las relaciones de "Me gusta" entre usuarios e inmuebles. Esto nos permitirá mantener un registro claro de las interacciones y facilitará la consulta y la generación de informes sobre las mismas.
+
+## Atributos Adicionales
+
+Además de las claves foráneas user_id y property_id, agregaremos los siguientes atributos adicionales a la tabla Likes:
+
+- **liked_at:** Registra la fecha y hora en que se dio el "Me gusta".
+- **active:** Indica si el "Me gusta" está activo o desactivado, lo que permitirá a los usuarios deshacer un "Me gusta" en el futuro.
+
+# Diagrama Entidad Relación
+
+![MER](image.png)
